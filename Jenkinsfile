@@ -23,8 +23,8 @@ pipeline {
 		stage('Stop Existing Containers'){
 			steps{
 				script{
-					sh "docker stop ${DOCKER_IMAGE}"
-					sh "docker rm ${DOCKER_IMAGE}"
+					sh "docker stop ${DOCKER_IMAGE} || true"
+					sh "docker rm ${DOCKER_IMAGE} || true"
 				}
 			}
 		}
