@@ -52,15 +52,15 @@ pipeline {
 				}
 			}
 		}
+	}
 
-		post {
-			success {
-				echo "DEPLOYEMENT SUCCESSFUL!"
-			}
-
-			failure {
-				echo "DEPLOYEMENT FAILED!"			
-			}
+	post {
+		success {	
+			echo "DEPLOYEMENT SUCCESSFUL!"
 		}
+
+		failure {
+			echo "DEPLOYEMENT FAILED!"			
+		}	
 	}
 }
