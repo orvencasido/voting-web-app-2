@@ -8,7 +8,7 @@ pipeline {
 	stages{
 		stage('Clone Repository'){
 			steps{
-				git branch:main url:'https://github.com/orvencasido/voting-web-app-2'
+				git branch: 'main', url: 'https://github.com/orvencasido/voting-web-app-2'
 			}
 		}
 
